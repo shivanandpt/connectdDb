@@ -1,0 +1,9 @@
+{
+    "env": "staging",
+    "port": 80,
+    "db": {
+        "name": "stagingDB",
+        "host": "localhost:27017"
+    }
+
+}
