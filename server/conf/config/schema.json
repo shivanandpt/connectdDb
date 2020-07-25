@@ -11,18 +11,26 @@
         "default": 3000,
         "env": "PORT"
     },
-    "db": {
-        "name": {
-            "doc": "DB name",
-            "format": "String",
-            "default": "devDB",
-            "env": "DB_NAME"
-        },
-        "host": {
-            "doc": "DB host name",
-            "format": "String",
-            "default": "localhost:27017",
-            "env": "DB_HOST"
+    "dbs": [
+        {
+            "name": {
+                "doc": "DB name",
+                "format": "String",
+                "default": "core",
+                "env": "DB_NAME1"
+            },
+            "host": {
+                "doc": "DB host name",
+                "format": "String",
+                "default": "localhost",
+                "env": "DB_HOST1"
+            },
+            "port": {
+                "doc": "Port number",
+                "format": "port",
+                "default": 27017,
+                "env": "DB_PORT1"
+            }
         }
-    }
+    ]
 }
