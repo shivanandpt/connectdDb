@@ -1,0 +1,9 @@
+{
+    "env": "test",
+    "port": 4000,
+    "db": {
+        "name": "testDB",
+        "host": "localhost:27017"
+    }
+
+}
