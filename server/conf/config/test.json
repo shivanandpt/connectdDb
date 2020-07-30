@@ -5,5 +5,4 @@
         "name": "testDB",
         "host": "localhost:27017"
     }
-
 }
