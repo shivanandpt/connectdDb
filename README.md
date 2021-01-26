@@ -1,4 +1,6 @@
-# connectdDbHow to connect to the different DBs
+# connectdDb
+
+How to connect to the different DBs
 
 # MongoDB
 
@@ -29,4 +31,4 @@ One server is running hit both APIs using postman or any code of your choice.
 It will return an empty array if DB is MongoDB.
 And will return an error if DB is MySql.
 
-You can add data in respective collections/tables and check with APIif you want to.
+You can add data in respective collections/tables and check with API if you want to.

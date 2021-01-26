@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 var mysql = require('mysql');
 
-var connectMongodb = url => MongoClient.connect(url).then(client => client.db());
+var connectMongodb = url => MongoClient.connect(url, {useUnifiedTopology: true}).then(client => client.db());
 
 var createuDbUrl = function (db) {
 
@@ -37,7 +37,7 @@ module.exports = async function(dbType, conf){
     let dataBases
     switch (dbType) {
         case "Mongodb":
-            conf = conf.map(x => connectMongodb(createuDbUrl(x)));
+            conf = conf.map(x => connectMongodb(createuDbUrl(x), conf));
             dataBases =  await Promise.all(conf);
             break;
 
