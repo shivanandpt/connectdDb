@@ -1,6 +1,5 @@
-const conf = require('./server/conf');
-const initializeDatabases = require('./server/db')
-(process.env.DB_TYPE, conf.get("dbs"));
+const conf = require('./server/config');
+const initializeDatabases = require('./server/config/db')(process.env.DB_TYPE, conf.get("dbs"));
 const express = require('express')
 const app = express();
 const routes = require('./server/routes');
